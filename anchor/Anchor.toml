@@ -5,14 +5,14 @@ anchor_version = "0.30.1"
 resolution = true
 skip-lint = false
 
-[programs.localnet]
+[programs.devnet]
 journal = "AsjZ3kWAUSQRNt2pZVeJkywhZ6gpLpHZmJjduPmKZDZZ"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "Localnet"
+cluster = "devnet"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

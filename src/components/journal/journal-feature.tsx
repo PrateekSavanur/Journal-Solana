@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { useWallet } from '@solana/wallet-adapter-react'
-import { WalletButton } from '../solana/solana-provider'
-import { AppHero, ellipsify } from '../ui/ui-layout'
-import { ExplorerLink } from '../cluster/cluster-ui'
-import { useJournalProgram } from './journal-data-access'
-import { JournalCreate, JournalList } from './journal-ui'
+import { useWallet } from "@solana/wallet-adapter-react";
+import { WalletButton } from "../solana/solana-provider";
+import { AppHero, ellipsify } from "../ui/ui-layout";
+import { ExplorerLink } from "../cluster/cluster-ui";
+import { useJournalProgram } from "./journal-data-access";
+import { JournalCreate, JournalList } from "./journal-ui";
 
 export default function JournalFeature() {
-  const { publicKey } = useWallet()
-  const { programId } = useJournalProgram()
+  const { publicKey } = useWallet();
+  const { programId } = useJournalProgram();
 
   return publicKey ? (
     <div>
@@ -20,7 +20,10 @@ export default function JournalFeature() {
         }
       >
         <p className="mb-6">
-          <ExplorerLink path={`account/${programId}`} label={ellipsify(programId.toString())} />
+          <ExplorerLink
+            path={`account/${programId}`}
+            label={ellipsify(programId.toString())}
+          />
         </p>
         <JournalCreate />
       </AppHero>
@@ -34,5 +37,5 @@ export default function JournalFeature() {
         </div>
       </div>
     </div>
-  )
+  );
 }

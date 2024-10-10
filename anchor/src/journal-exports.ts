@@ -21,7 +21,7 @@ export function getJournalProgramId(cluster: Cluster) {
     case 'devnet':
     case 'testnet':
       // This is the program ID for the Journal program on devnet and testnet.
-      return new PublicKey('CounNZdmsQmWh7uVngV9FXW2dZ6zAgbJyYsvBpqbykg')
+      return new PublicKey('E6KBruJW3ywaN6WyggYoZqGuUrrtFWvyenagzNdyfYFR')
     case 'mainnet-beta':
     default:
       return JOURNAL_PROGRAM_ID
