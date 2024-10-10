@@ -1,7 +1,3 @@
-# journal
-
-This project is a preview. Please give feedback to [beeman](https://x.com/beeman_nl) on X.
-
 ## Getting Started
 
 ### Prerequisites
